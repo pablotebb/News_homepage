@@ -1,0 +1,487 @@
+@use "variables" as v;
+
+// TV
+@mixin d-tv($trademark: unset, $position: unset) {
+  @if ($trademark == "Television-480p") {
+    @if ($position == 1) {
+      // ⬇️ 640px x 480px
+      @media (max-width: 40.0625rem) and (min-height: 30rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Television-720p") {
+    @if ($position == 1) {
+      // ⬇️ 1280px x 720px
+      @media (max-width: 80.0625rem) and (min-height: 45rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Television-1080p") {
+    @if ($position == 1) {
+      // ⬇️ 1920px x 1080px
+      @media (max-width: 120.0625rem) and (min-height: 67.5rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Television-2k") {
+    @if ($position == 1) {
+      // ⬇️ 2048px x 1080px
+      @media (max-width: 128.0625rem) and (min-height: 67.5rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Television-4k") {
+    @if ($position == 1) {
+      // ⬇️ 3840px x 2160px
+      @media (max-width: 240.0625rem) and (min-height: 135rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Television-8k") {
+    @if ($position == 1) {
+      // ⬇️ 7680px x 4320px
+      @media (max-width: 480rem) and (min-height: 270rem) {
+        @content;
+      }
+    }
+  }
+}
+
+// Desktops, Notebooks
+@mixin d-d($trademark: unset, $position: unset) {
+  @if ($trademark == "Notebook-10") {
+    @if ($position == 1) {
+      // ⬇️ 1024px x 600px
+      @media (max-width: 64.0625rem) and (min-height: 37.5rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 600px x 1024px
+      @media (max-width: 37.5625rem) and (min-height: 64rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Notebook-12") {
+    @if ($position == 1) {
+      // ⬇️ 1024px x 768px
+      @media (max-width: 64.0625rem) and (min-height: 48rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 768px x 1024px
+      @media (max-width: 48.0625rem) and (min-height: 64rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Notebook-13") {
+    @if ($position == 1) {
+      // ⬇️ 1280px x 800px
+      @media (max-width: 80.0625rem) and (min-height: 50rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 800px x 1281px
+      @media (max-width: 50.0625rem) and (min-height: 80.0625rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Notebook-15") {
+    @if ($position == 1) {
+      // ⬇️ 1366px x 768px
+      @media (max-width: 85.4375rem) and (min-height: 48rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 768px x 1366px
+      @media (max-width: 48.0625rem) and (min-height: 85.375rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Desktop-19") {
+    @if ($position == 1) {
+      // ⬇️ 1440px x 900px
+      @media (max-width: 90.0625rem) and (min-height: 56.25rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 900px x 1440px
+      @media (max-width: 56.3125rem) and (min-height: 90rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Desktop-20") {
+    @if ($position == 1) {
+      // ⬇️ 1600px x 900px
+      @media (max-width: 100.0625rem) and (min-height: 56.25rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 900px x 1600px
+      @media (max-width: 56.3125rem) and (min-height: 100rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Desktop-22") {
+    @if ($position == 1) {
+      // ⬇️ 1680px x 1050px
+      @media (max-width: 105.0625rem) and (min-height: 65.625rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 1050px x 1680px
+      @media (max-width: 65.6875rem) and (min-height: 105rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Desktop-23") {
+    @if ($position == 1) {
+      // ⬇️ 1920px x 1080px
+      @media (max-width: 120.0625rem) and (min-height: 67.5rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 1080px x 1920px
+      @media (max-width: 67.5625rem) and (min-height: 120rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "Desktop-24") {
+    @if ($position == 1) {
+      // ⬇️ 1920px x 1200px
+      @media (max-width: 120.0625rem) and (min-height: 75rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 1200px x 1920px
+      @media (max-width: 75.0625rem) and (min-height: 120rem) {
+        @content;
+      }
+    }
+  }
+}
+
+// Tablets
+@mixin d-t($trademark: unset, $position: unset) {
+  @if ($trademark == "kindle-fire-hd-7") {
+    @if ($position == 1) {
+      // ⬇️ 800px x 480px
+      @media (max-width: 50.0625rem) and (min-height: 30rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 480px x 800px
+      @media (max-width: 30.0625rem) and (min-height: 50rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "asus-nexus-7") {
+    @if ($position == 1) {
+      // ⬇️ 960px x 600px
+      @media (max-width: 60.0625rem) and (min-height: 37.5rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 600px x 960px
+      @media (max-width: 37.5625rem) and (min-height: 60rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "kindle-fire") {
+    @if ($position == 1) {
+      // ⬇️ 1024px x 600px
+      @media (max-width: 64.0625rem) and (min-height: 37.5rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 600px x 1024px
+      @media (max-width: 37.5625rem) and (min-height: 64rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "apple-ipad") {
+    @if ($position == 1) {
+      // ⬇️ 1024px x 768px
+      @media (max-width: 64.0625rem) and (min-height: 48rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 768px x 1024px
+      @media (max-width: 48.0625rem) and (min-height: 64rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "samsung-galaxy-tab-7") {
+    @if ($position == 1) {
+      // ⬇️ 1024px x 600px
+      @media (max-width: 64.0625rem) and (min-height: 37.5rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 600px x 1024px
+      @media (max-width: 37.5625rem) and (min-height: 64rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "kindle-fire-hd-8-9") {
+    @if ($position == 1) {
+      // ⬇️ 1280px x 800px
+      @media (max-width: 80.0625rem) and (min-height: 50rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 800px x 1280px
+      @media (max-width: 50.0625rem) and (min-height: 80rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "samsung-galaxy-tab") {
+    @if ($position == 1) {
+      // ⬇️ 1280px x 800px
+      @media (max-width: 80.0625rem) and (min-height: 50rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 800px x 1280px
+      @media (max-width: 50.0625rem) and (min-height: 80rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "apple-ipad-pro") {
+    @if ($position == 1) {
+      // ⬇️ 1366px x 1024px
+      @media (max-width: 85.4375rem) and (min-height: 64rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 1024px x 1366px
+      @media (max-width: 64.0625rem) and (min-height: 85.375rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "microsoft-surface-pro") {
+    @if ($position == 1) {
+      // ⬇️ 1440px x 1024px
+      @media (max-width: 90.0625rem) and (min-height: 64rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 1024px x 1440px
+      @media (max-width: 64.0625rem) and (min-height: 90rem) {
+        @content;
+      }
+    }
+  }
+}
+
+// Mobiles
+@mixin d-m($trademark: unset, $position: unset) {
+  @if ($trademark == "motorola-razr-v3m") {
+    @if ($position == 1) {
+      // ⬇️ 176px x 220px
+      @media (max-width: 11.0625rem) and (min-height: 13.75rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 220px x 176px
+      @media (max-width: 13.8125rem) and (min-height: 11rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "motorola-razr-v8") {
+    @if ($position == 1) {
+      // ⬇️ 240px x 320px
+      @media (max-width: 15.0625rem) and (min-height: 20rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 320px x 240px
+      @media (max-width: 20.0625rem) and (min-height: 15rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "blackberry-8300") {
+    @if ($position == 1) {
+      // ⬇️ 320px x 240px
+      @media (max-width: 20.0625rem) and (min-height: 15rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 240px x 320px
+      @media (max-width: 15.0625rem) and (min-height: 20rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "apple-iphone-3-4") {
+    @if ($position == 1) {
+      // ⬇️ 320px x 480px
+      @media (max-width: 20.0625rem) and (min-height: 30rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 480px x 320px
+      @media (max-width: 30.0625rem) and (min-height: 20rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "samsung-galaxy-s2") {
+    @if ($position == 1) {
+      // ⬇️ 320px x 533px
+      @media (max-width: 20.0625rem) and (min-height: 33.3125rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 533px x 320px
+      @media (max-width: 33.375rem) and (min-height: 20rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "apple-iphone-5") {
+    @if ($position == 1) {
+      // ⬇️ 320px x 568px
+      @media (max-width: 20.0625rem) and (min-height: 35.5rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 568px x 320px
+      @media (max-width: 35.5625rem) and (min-height: 20rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "lg-g3-5") {
+    @if ($position == 1) {
+      // ⬇️ 360px x 640px
+      @media (max-width: 22.5625rem) and (min-height: 40rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 640px x 360px
+      @media (max-width: 40.0625rem) and (min-height: 22.5rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "samsung-galaxy-s3-7") {
+    @if ($position == 1) {
+      // ⬇️ 360px x 640px
+      @media (max-width: 22.5625rem) and (min-height: 40rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 640px x 360px
+      @media (max-width: 40.0625rem) and (min-height: 22.5rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "apple-iphone-6-7") {
+    @if ($position == 1) {
+      // ⬇️ 375px x 667px
+      @media (max-width: 23.5rem) and (min-height: 41.6875rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 667px x 375px
+      @media (max-width: 41.75rem) and (min-height: 23.4375rem) {
+        @content;
+      }
+    }
+  }
+
+  @if ($trademark == "apple-iphone-6-7-plus") {
+    @if ($position == 1) {
+      // ⬇️ 414px x 736px
+      @media (max-width: 25.9375rem) and (min-height: 46rem) {
+        @content;
+      }
+    }
+    @if ($position == 2) {
+      // ➡️ 736px x 414px
+      @media (max-width: 46.0625rem) and (min-height: 25.875rem) {
+        @content;
+      }
+    }
+  }
+}

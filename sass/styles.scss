@@ -1,0 +1,193 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "mixins_dimensions" as md;
+@use "init";
+@use "footer";
+@use "header_web";
+
+.main-container {
+  position: relative;
+  margin: 3.8125rem auto 5.4375rem;
+  // 1450px
+  @media (max-width: v.$Width-media) {
+    // border: 1px solid blue;
+    width: v.$Width-desktop;
+    // max-width: 64rem;
+    max-width: 100%;
+    min-height: v.$Height-mobile;
+    min-height: v.$Height-desktop;
+    margin: 5.5625rem auto 5.5625rem;
+  }
+
+  // TELEVISION
+  // ⬇️⬆️⬇️
+  @include md.d-tv("Television-8k", 1) {
+    // border: 1px solid yellow;
+    width: 65%;
+    margin: 700px auto 5.5625rem;
+  }
+
+  // ⬇️⬆️⬇️
+  @include md.d-tv("Television-4k", 1) {
+    // border: 1px solid yellow;
+    min-width: 65%;
+    margin: 700px auto 5.5625rem;
+  }
+
+  // ⬇️⬆️⬇️
+  @include md.d-tv("Television-2k", 1) {
+    // border: 1px solid yellow;
+    width: 55%;
+  }
+
+  // ⬇️⬆️⬇️
+  @include md.d-tv("Television-1080p", 1) {
+    // border: 1px solid red;
+    max-width: 58%;
+  }
+
+  // ⬇️⬆️⬇️
+  @include md.d-tv("Television-720p", 1) {
+    // border: 1px solid red;
+    width: 83%;
+  }
+
+  // ⬇️⬆️⬇️
+  @include md.d-tv("Television-480p", 1) {
+    // border: 1px solid red;
+    margin: 1.875rem auto 5.5625rem;
+    width: 100%;
+  }
+
+  // DESKTOP
+  @include md.d-d("Notebook-10", 1) {
+    // border: 1px solid red;
+    width: 95%;
+  }
+
+  @include md.d-d("Desktop-20", 1) {
+    // border: 1px solid red;
+    width: 95%;
+  }
+
+  @include md.d-d("Desktop-22", 1) {
+    // border: 1px solid red;
+    width: 68%;
+    margin: 5.625rem auto 5.5625rem;
+  }
+
+  @include md.d-d("Desktop-22", 2) {
+    // border: 1px solid red;
+    min-width: 90%;
+  }
+
+  @include md.d-d("Desktop-23", 1) {
+    // border: 1px solid red;
+    width: 95%;
+  }
+
+  @include md.d-d("Desktop-23", 2) {
+    // border: 1px solid red;
+    min-width: 90%;
+  }
+
+  @include md.d-d("Desktop-24", 1) {
+    // border: 1px solid red;
+    width: 95%;
+  }
+
+  @include md.d-d("Desktop-24", 2) {
+    // border: 1px solid red;
+    min-width: 95%;
+  }
+
+  // TABLET
+  @include md.d-t("kindle-fire-hd-7", 1) {
+    // border: 1px solid red;
+    width: 95%;
+  }
+
+  @include md.d-t("apple-ipad", 2) {
+    // border: 1px solid yellow;
+    min-width: 90%;
+  }
+
+  @include md.d-t("kindle-fire-hd-8-9", 2) {
+    // border: 1px solid red;
+    min-width: 90%;
+  }
+
+  @include md.d-t("apple-ipad-pro", 2) {
+    // border: 1px solid yellow;
+    min-width: 90%;
+  }
+
+  @include md.d-t("microsoft-surface-pro", 1) {
+    // border: 1px solid red;
+    width: 77%;
+  }
+
+  @include md.d-t("microsoft-surface-pro", 2) {
+    // border: 1px solid yellow;
+    width: 95%;
+  }
+
+  // MOBILE
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7-plus", 2) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7", 2) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("lg-g3-5", 2) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-5", 2) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s2", 2) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-3-4", 2) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 1) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 2) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 1) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 2) {
+    // border: 1px solid yellow;
+    width: 80%;
+  }
+}

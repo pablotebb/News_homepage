@@ -1,0 +1,606 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "mixins_dimensions" as md;
+
+.header-web {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+    // border: 1px solid red;
+  }
+  &__menu-ul {
+    // border: 1px solid red;
+    list-style: none;
+    display: flex;
+    gap: 2.375rem;
+    position: absolute;
+    right: 0;
+  }
+  &__menu-ul--link {
+    // border: 1px solid red;
+    a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 100;
+      letter-spacing: 0.001rem;
+      &:hover {
+        color: v.$Soft_red;
+      }
+    }
+  }
+  &__hamburger {
+    // border: 1px solid red;
+    display: none;
+  }
+  &__close {
+    // border: 1px solid red;
+    display: none;
+  }
+  &__modal-menu {
+    // border: 1px solid red;
+    display: none;
+  }
+  &__modal-menu--link {
+    // border: 1px solid red;
+  }
+
+  // DESKTOP
+  @include md.d-d("Desktop-24", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Desktop-23", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Desktop-22", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Desktop-20", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Desktop-19", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Notebook-15", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  // TABLET
+  @include md.d-t("apple-ipad-pro", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("kindle-fire-hd-8-9", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("apple-ipad", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("asus-nexus-7", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("kindle-fire-hd-7", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("apple-ipad", 2) {
+    @include m.remove-menu-put-hamburger();
+  }
+
+  // MOBILE
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7-plus", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      15.625rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      15.625rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("lg-g3-5", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      15rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-5", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      13.125rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s2", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      12.5rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-3-4", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      12.5rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 1) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      6.25rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      8.75rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 1) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      6.25rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      8.75rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+}
+
+.display-background {
+  // DESKTOP (display-background)
+  @include md.d-d("Desktop-24", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-d("Desktop-23", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-d("Desktop-22", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-d("Desktop-20", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-d("Desktop-19", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-d("Notebook-15", 2) {
+    @include m.modal-menu-background();
+  }
+
+  // TABLET (display-background)
+  @include md.d-t("apple-ipad-pro", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-t("kindle-fire-hd-8-9", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-t("apple-ipad", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-t("asus-nexus-7", 2) {
+    @include m.modal-menu-background();
+  }
+
+  @include md.d-t("kindle-fire-hd-7", 2) {
+    @include m.modal-menu-background();
+  }
+
+  // MOBILE (display-background)
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7-plus", 2) {
+    @include m.modal-menu-background(6rem);
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7", 2) {
+    @include m.modal-menu-background(6rem);
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("lg-g3-5", 2) {
+    @include m.modal-menu-background(6rem);
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-5", 2) {
+    @include m.modal-menu-background(6rem);
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s2", 2) {
+    @include m.modal-menu-background(6rem);
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-3-4", 2) {
+    @include m.modal-menu-background(6rem);
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 1) {
+    @include m.modal-menu-background(6rem);
+  }
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 2) {
+    @include m.modal-menu-background(6rem);
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 1) {
+    @include m.modal-menu-background(6rem);
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 2) {
+    @include m.modal-menu-background(6rem);
+  }
+}
+
+.display-modal-menu {
+  // DESKTOP (display-modal-menu)
+  @include md.d-d("Desktop-24", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Desktop-23", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Desktop-22", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Desktop-20", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Desktop-19", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-d("Notebook-15", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  // TABLET (display-modal-menu)
+  @include md.d-t("apple-ipad-pro", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("kindle-fire-hd-8-9", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("apple-ipad", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("asus-nexus-7", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  @include md.d-t("kindle-fire-hd-7", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu();
+  }
+
+  // MOBILE (display-modal-menu)
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7-plus", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      15.625rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      15rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("lg-g3-5", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      13.125rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-5", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      13.125rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s2", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      12.5rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-3-4", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      100px,
+      // 3
+      1.6px,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 1) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      6.25rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      8.75rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 1) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100%,
+      // 2
+      6.25rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 2) {
+    @include m.remove-menu-put-hamburger();
+    @include m.put-modal-menu(
+      // 1
+      100vh,
+      // 2
+      8.75rem,
+      // 3
+      0.1rem,
+      // 4
+      0.1rem,
+      // 5
+      9rem
+    );
+  }
+}
