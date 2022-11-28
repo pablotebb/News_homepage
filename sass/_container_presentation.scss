@@ -1,0 +1,1122 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "mixins_dimensions" as md;
+
+.container-presentation {
+  // border: 5px solid red;
+  &__picture {
+    img {
+      width: 45.625rem;
+      height: 18.75rem;
+    }
+  }
+
+  @include m.complete_web(
+    // 1
+    100%,
+    // 2
+    31rem,
+    // 3
+    7.9375rem,
+    // 4
+    row,
+    // 5
+    true,
+    // 6
+    17rem,
+    // 7
+    true,
+    // 8
+    2rem,
+    // 9
+    0.9rem,
+    // 10
+    2.2rem,
+    // 11
+    true,
+    // 12
+    v.$Soft_red
+  );
+
+  // DESKTOP
+  @include md.d-d("Desktop-24", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11,
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Desktop-23", 2) {
+  }
+
+  @include md.d-d("Desktop-22", 2) {
+  }
+
+  @include md.d-d("Desktop-20", 2) {
+    // border: 5px solid red;
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      0.5rem,
+      // 11,
+      false,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Desktop-19", 2) {
+  }
+
+  @include md.d-d("Notebook-15", 2) {
+  }
+
+  @include md.d-d("Notebook-13", 2) {
+  }
+
+  @include md.d-d("Notebook-12", 2) {
+  }
+
+  @include md.d-d("Notebook-10", 2) {
+  }
+
+  @include md.d-d("Desktop-24", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11,
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Desktop-23", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Desktop-22", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Desktop-20", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Desktop-19", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Notebook-15", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Notebook-13", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Notebook-12", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Notebook-10", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-d("Notebook-10", 2) {
+  }
+
+  @include md.d-d("Notebook-12", 2) {
+  }
+
+  @include md.d-d("Notebook-13", 2) {
+  }
+
+  @include md.d-d("Notebook-15", 2) {
+  }
+
+  @include md.d-d("Desktop-19", 2) {
+  }
+
+  @include md.d-d("Desktop-20", 2) {
+  }
+
+  @include md.d-d("Desktop-22", 2) {
+  }
+
+  @include md.d-d("Desktop-23", 2) {
+  }
+
+  @include md.d-d("Desktop-24", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  // TABLETS
+
+  @include md.d-t("microsoft-surface-pro", 2) {
+  }
+
+  @include md.d-t("apple-ipad-pro", 2) {
+  }
+
+  @include md.d-t("samsung-galaxy-tab", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      false,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-t("kindle-fire-hd-8-9", 2) {
+  }
+
+  @include md.d-t("samsung-galaxy-tab-7", 2) {
+  }
+
+  @include md.d-t("apple-ipad", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      91rem,
+      // 3
+      70rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      false,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-t("kindle-fire", 2) {
+  }
+
+  @include md.d-t("asus-nexus-7", 2) {
+  }
+
+  @include md.d-t("kindle-fire-hd-7", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      false,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-t("microsoft-surface-pro", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-t("apple-ipad-pro", 1) {
+  }
+
+  @include md.d-t("samsung-galaxy-tab", 1) {
+  }
+
+  @include md.d-t("kindle-fire-hd-8-9", 1) {
+  }
+
+  @include md.d-t("samsung-galaxy-tab-7", 1) {
+  }
+
+  @include md.d-t("apple-ipad", 1) {
+  }
+
+  @include md.d-t("kindle-fire", 1) {
+  }
+
+  @include md.d-t("asus-nexus-7", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      false,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  @include md.d-t("kindle-fire-hd-7", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      false,
+      // 12
+      v.$Soft_red
+    );
+  }
+
+  // MOBILE
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7-plus", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31.6rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s3-7", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-5", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-3-4", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      36rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s2", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      32rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("blackberry-8300", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      90rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      50rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 2) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      55rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 1) {
+    @include m.complete_web(
+      // 1
+      140%,
+      // 2
+      74rem,
+      // 3
+      7.9375rem,
+      // 4
+      column,
+      // 5
+      false,
+      // 6
+      8.125rem,
+      // 7
+      true
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 1) {
+    @include m.complete_web(
+      // 1
+      140%,
+      // 2
+      60rem,
+      // 3
+      7.9375rem,
+      // 4
+      column,
+      // 5
+      false,
+      // 6
+      8.125rem,
+      // 7
+      true,
+      // 8
+      0.75rem,
+      // 9
+      0.63rem,
+      // 10
+      2.2rem,
+      // 11
+      false
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("blackberry-8300", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      40rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-3-4", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      43rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s2", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      43rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-5", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      43rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("lg-g3-5", 2) {
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s3-7", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      41rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      40rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7-plus", 1) {
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      38rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem
+    );
+  }
+}
+
+.bright-future {
+  &__title {
+    font-size: 3.45rem;
+    font-weight: 800;
+    letter-spacing: 0.02rem;
+  }
+}
+
+.bright-future-container {
+  &__paragraph {
+    font-size: 0.95rem;
+    font-weight: 100;
+  }
+  &__button {
+    text-transform: uppercase;
+    @include m.button_read(
+      // 1
+      v.$Soft_red,
+      // 2
+      v.$Off_white,
+      // 3
+      transparent,
+      // 4
+      0.625rem,
+      // 5
+      1rem,
+      // 6
+      0.8333rem
+    );
+  }
+}
+
+.new {
+  // border: 1px solid red;
+  padding: 3.0625rem 1.5rem 1.5rem 1.5rem;
+  width: 21.875rem;
+  height: 31.9375rem;
+  background-color: v.$Very_dark_blue;
+  color: v.$Off_white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  &__title {
+    // border: 1px solid red;
+    font-size: 2.45rem;
+    font-weight: 500;
+    letter-spacing: 0.055rem;
+    color: v.$Soft_orange;
+    width: 100%;
+    margin-bottom: 1.6875rem;
+  }
+}
+
+.new-article {
+  @include m.article();
+}
+
+.articles {
+  // border: 1px solid red;
+  display: flex;
+}
+
+.articles-container {
+  // border: 1px solid red;
+  display: flex;
+  gap: 1.5rem;
+
+  &__picture {
+    img {
+      width: 6.25rem;
+      height: 7.9375rem;
+    }
+  }
+}
+
+.articles-container-article {
+  &__title-one {
+    font-size: 32px;
+    font-weight: 700;
+    color: v.$Grayish_blue;
+  }
+  @include m.article(
+    // 1
+    1.13rem,
+    // 2
+    0.008rem
+  );
+}
+
+.no-border {
+  border-bottom: none;
+}

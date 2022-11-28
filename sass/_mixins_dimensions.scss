@@ -41,7 +41,7 @@
   @if ($trademark == "Television-4k") {
     @if ($position == 1) {
       // ⬇️ 3840px x 2160px
-      @media (max-width: 240.0625rem) and (min-height: 135rem) {
+      @media (max-width: 240rem) and (min-height: 135rem) {
         @content;
       }
     }
@@ -49,8 +49,8 @@
 
   @if ($trademark == "Television-8k") {
     @if ($position == 1) {
-      // ⬇️ 7680px x 4320px
-      @media (max-width: 480rem) and (min-height: 270rem) {
+      // ⬇️ 7680px x 2160px
+      @media (max-width: 480.0625rem) and (min-height: 135rem) {
         @content;
       }
     }

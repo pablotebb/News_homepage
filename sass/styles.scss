@@ -4,15 +4,16 @@
 @use "init";
 @use "footer";
 @use "header_web";
+@use "container_presentation";
 
 .main-container {
   position: relative;
   margin: 3.8125rem auto 5.4375rem;
+
   // 1450px
   @media (max-width: v.$Width-media) {
     // border: 1px solid blue;
     width: v.$Width-desktop;
-    // max-width: 64rem;
     max-width: 100%;
     min-height: v.$Height-mobile;
     min-height: v.$Height-desktop;
@@ -24,14 +25,79 @@
   @include md.d-tv("Television-8k", 1) {
     // border: 1px solid yellow;
     width: 65%;
-    margin: 700px auto 5.5625rem;
+
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red,
+      // 13
+      true
+    );
+
+    margin: 43.75rem auto 5.5625rem;
+    display: flex;
+    justify-content: center;
   }
 
   // ⬇️⬆️⬇️
   @include md.d-tv("Television-4k", 1) {
     // border: 1px solid yellow;
-    min-width: 65%;
-    margin: 700px auto 5.5625rem;
+    width: 40%;
+
+    @include m.complete_web(
+      // 1
+      100%,
+      // 2
+      31rem,
+      // 3
+      7.9375rem,
+      // 4
+      row,
+      // 5
+      true,
+      // 6
+      17rem,
+      // 7
+      true,
+      // 8
+      2rem,
+      // 9
+      0.9rem,
+      // 10
+      2.2rem,
+      // 11
+      true,
+      // 12
+      v.$Soft_red,
+      // 13
+      true
+    );
+    // width: 70%;
+
+    margin: 25rem auto 5.5625rem;
+    display: flex;
+    justify-content: center;
   }
 
   // ⬇️⬆️⬇️
@@ -189,5 +255,124 @@
   @include md.d-m("motorola-razr-v3m", 2) {
     // border: 1px solid yellow;
     width: 80%;
+  }
+}
+
+.back-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100rem;
+  background-color: v.$black-modal;
+}
+
+.show-back-wrapper {
+  display: block;
+  @media (min-width: 46.125rem) {
+    display: none;
+  }
+  // DESKTOP
+  @include md.d-d("Desktop-24", 2) {
+    display: block;
+  }
+
+  @include md.d-d("Desktop-23", 2) {
+    display: block;
+  }
+
+  @include md.d-d("Desktop-22", 2) {
+    display: block;
+  }
+
+  @include md.d-d("Desktop-20", 2) {
+    display: block;
+  }
+
+  @include md.d-d("Desktop-19", 2) {
+    display: block;
+  }
+
+  @include md.d-d("Notebook-15", 2) {
+    display: block;
+  }
+
+  @include md.d-d("Notebook-13", 2) {
+    display: block;
+  }
+
+  @include md.d-d("Notebook-12", 2) {
+    display: block;
+  }
+
+  @include md.d-d("Notebook-10", 2) {
+    display: block;
+  }
+
+  // TABLET
+  @include md.d-t("apple-ipad-pro", 2) {
+    display: block;
+  }
+
+  @include md.d-t("kindle-fire-hd-8-9", 2) {
+    display: block;
+  }
+
+  @include md.d-t("apple-ipad", 2) {
+    display: block;
+  }
+
+  @include md.d-t("asus-nexus-7", 2) {
+    display: block;
+  }
+
+  @include md.d-t("kindle-fire-hd-7", 2) {
+    display: block;
+  }
+
+  // MOBILE
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7-plus", 2) {
+    display: block;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-6-7", 2) {
+    display: block;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("lg-g3-5", 2) {
+    display: block;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-5", 2) {
+    display: block;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("samsung-galaxy-s2", 2) {
+    display: block;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("apple-iphone-3-4", 2) {
+    display: block;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v8", 2) {
+    display: block;
+  }
+
+  // ⬇️⬆️
+  @include md.d-m("motorola-razr-v3m", 2) {
+    display: block;
   }
 }
